@@ -17,4 +17,5 @@ class QuestionAdmin(admin.ModelAdmin):
     list_filter = ['pub_date']
     search_fields = ['question_text']
 
+# 관리자 사이트에서 poll APP을 변경가능하도록 하기 위해서.. register 이용
 admin.site.register(Question, QuestionAdmin)
